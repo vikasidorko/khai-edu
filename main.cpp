@@ -1,11 +1,16 @@
 #include <iostream>
 #include <cmath>
+#include <clocale>
+#include <windows.h>
 
 using namespace std;
 
 int main()
 {
-    // ==========================================
+    setlocale(LC_ALL, "Ukrainian");
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
     // Задача 1 (Begin42)
     // Дано діагоналі ромба d1 і d2. Знайти площу S.
     // ==========================================
