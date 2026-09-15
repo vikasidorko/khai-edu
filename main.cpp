@@ -1,58 +1,54 @@
 #include <iostream>
-#include <cmath>
-#include <clocale>
-#include <windows.h>
+using namespace std;
+
+#include <iostream>
+using namespace std;
+
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
-    setlocale(LC_ALL, "Ukrainian");
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
-
-    // Задача 1 (Begin42)
-    // Дано діагоналі ромба d1 і d2. Знайти площу S.
-    // ==========================================
-    cout << "--- Задача 1 (Begin42): Площа ромба ---" << endl;
-
-    // Декларація змінних
     double d1, d2, S;
 
-    // Введення змінних
-    cout << "Введіть діагональ d1: ";
+    cout << "Enter diagonal d1: ";
     cin >> d1;
-    cout << "Введіть діагональ d2: ";
+
+    cout << "Enter diagonal d2: ";
     cin >> d2;
 
-    // Розрахунок результату
-    S = (d1 * d2) / 2.0;
+    S = (d1 * d2) / 2;
 
-    // Вивід результату
-    cout << "Площа ромба S = " << S << endl << endl;
+    cout << "Area of the rhombus: " << S << endl;
 
-    // ==========================================
-    // Задача 2 (Begin42)
-    // Дано діагоналі ромба d1 і d2. Знайти сторону a та периметр P.
-    // ==========================================
-    cout << "--- Задача 2 (Begin42): Сторона та периметр ромба ---" << endl;
 
-    // Декларація змінних
-    double a, P;
+    double a, b, c, A;
 
-    // Введення змінних
-    cout << "Введіть діагональ d1: ";
-    cin >> d1;
-    cout << "Введіть діагональ d2: ";
-    cin >> d2;
+    cout << "\nEnter number a: ";
+    cin >> a;
 
-    // Розрахунок результату за теоремою Піфагора
-    a = sqrt(pow(d1 / 2.0, 2) + pow(d2 / 2.0, 2));
-    P = 4.0 * a;
+    cout << "Enter number b: ";
+    cin >> b;
 
-    // Вивід результату
-    cout << "Сторона ромба a = " << a << endl;
-    cout << "Периметр ромба P = " << P << endl;
+    cout << "Enter number c: ";
+    cin >> c;
+
+    A = (a + b + c) / 3;
+
+    cout << "Arithmetic mean: " << A << endl;
+
+
+    double km, m, cm;
+
+    cout << "\nEnter distance in kilometers: ";
+    cin >> km;
+
+    m = km * 1000;
+    cm = km * 100000;
+
+    cout << "Distance in meters: " << m << endl;
+    cout << "Distance in centimeters: " << cm << endl;
 
     return 0;
 }
