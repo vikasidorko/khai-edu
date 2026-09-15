@@ -1,13 +1,6 @@
 #include <iostream>
 using namespace std;
 
-#include <iostream>
-using namespace std;
-
-#include <iostream>
-
-using namespace std;
-
 int main()
 {
     double d1, d2, S;
